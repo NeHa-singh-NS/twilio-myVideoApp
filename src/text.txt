@@ -1,0 +1,21 @@
+# Personal account - default config
+Host nehamnsingh@gmail.com
+   HostName github.com
+   User git
+   IdentityFile ~/.ssh/id_rsa_neha
+# Work account
+Host nikhil.upadhyay@vetty.co
+   HostName github.com
+   User git
+   IdentityFile ~/.ssh/id_rsa_vetty
+
+
+   [user]
+    name = neha
+    email = nehamnsingh@gmail.com
+[includeIf "gitdir:~/vetty/"]
+    path = ~/vetty/.gitconfig
+
+    [user]
+    name = Nikhil Upadhyay
+    email = nikhil.upadhyay@vetty.co
